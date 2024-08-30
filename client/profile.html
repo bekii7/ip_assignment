@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="./css/profile.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>My Profile</h1>
+        </header>
+        <main>
+            <section class="profile-info">
+                <img src="./images/photo_2024-07-19_15-31-11.jpg" alt="Profile Picture" class="profile-pic">
+                <h2 id="username" >haileysus Habtamu</h2>
+                <p id="email">Haile123e@example.com</p>
+                <button id="editProfileBtn">Edit Profile</button>
+            </section>
+            <section class="profile-settings">
+                <h3>Settings</h3>
+                <form id="settingsForm">
+                    <label for="newUsername">Change username:</label>
+                    <input  id="newUsername" placeholder="New username">
+                    <label for="newEmail">Change Email:</label>
+                    <input type="email" id="newEmail" placeholder="New email">
+                    <label for="newProfilePic">choose new profile picture:</label>
+                    <input type="file" id="newProfilePic">
+                    <button  id="update">Update</button>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2024 Gulit</p>
+        </footer>
+    </div>
+    <script src="./js/profile.js"></script>
+</body>
+</html>

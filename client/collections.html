@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./css/homePage.css">
+</head>
+<body>
+  <div class="header-container">
+    <div class="main-content">
+      <div class=" searchNav">
+        <div class='searchDiv'>
+          <input
+            value=''
+            onChange=""
+            type="text"
+            placeholder="Search"
+            class=" search"
+          />
+          <i class="fa-solid fa-magnifying-glass icon" style="color: #000000;"></i>
+        </div>
+        <a class=' cart_div' href='./checkOut.html'>
+          <p class='cartNum' style="font-size: 6px;
+          color: white;
+          margin-left: auto;
+          background-color: red;
+          width: fit-content;
+          padding: 4px;
+          border-radius: 50%;">0</p>
+          <i class="fa-solid fa-cart-shopping icon" style="color: #000000;"></i>
+        </a>
+        <div class="navbar">
+          <a href="./homePage.html" class="nav-link">Home</a>
+          <a href="./collections.html" class="nav-link-active">Collections</a>
+          <a href="aboutUs.html" class="nav-link">About Us</a>
+      </div>
+      </div>
+      </div>
+      </div>
+      <div class='products '>
+        <!-- category -->
+        <div className='category_div' style="display: flex;gap:200px;margin-left: 15%;padding: 4px;width: fit-content;">
+         <p class="category">men</p> 
+         <p class="category">women</p> 
+         <p class="category">kids</p> 
+         <p class="category">dress</p> 
+         <p class="category">shoe</p> 
+        </div>
+        <div class="itemsDiv" style="margin-left: 10%;">
+          <a href="#" class="item-card">
+              <img src="./images/trending1.jpg" class="item-image" >
+              <h3 class="item-title">Beige casual bag</h3>
+              <div class="item-info">
+                  <p class="item-price">$ 52</p>
+                  <div class="add-to-cart">
+                      <i class="fa-regular fa-bag icon"></i>
+                      <p>Add</p>
+                  </div>
+              </div>
+          </a>
+      </div>
+      <script src="./js/collections.js"></script>ri
+</body>
+</html>

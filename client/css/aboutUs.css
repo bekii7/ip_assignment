@@ -1,0 +1,115 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.bg-custom {
+  background-color: #F5F5DC;
+}
+
+.pt-4 {
+  padding-top: 1rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  margin-right:10%;
+  gap: 32px;
+}
+
+.nav-link, .nav-link-active {
+  color: black;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.nav-link-active {
+  color: orange;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.content-box {
+  display: flex;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  padding: 2rem;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+.rounded-img {
+  border-radius: 12px;
+  width: 256px;
+  height: auto;
+}
+
+.info-container {
+  margin-left: 2rem;
+  width: 50%;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+}
+
+.icon-bg {
+  
+  color: white;
+  border-radius: 50%;
+  padding: 0.75rem;
+  margin-right: 1rem;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+}
+
+.visit-link {
+  margin-top: 1.5rem;
+}
+
+.btn {
+  background-color: black;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #333;
+}

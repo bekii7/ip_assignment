@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In / Sign Up</title>
+    <link rel="stylesheet" href="../client/css/signin.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Sign In / Sign Up</h1>
+        </header>
+        
+        <main>
+            <div class="form-container">
+                <div class="tabs">
+                    <button id="signInTab" class="active">Sign In</button>
+                    <button id="signUpTab" >Sign Up</button>
+                </div>
+
+                <!-- Error Message -->
+                <div id="error" class="error-message" style="display: none;"></div>
+
+                <!-- Sign In Form -->
+                <form id="signInForm" class="form">
+                    <div class="form-group">
+                        <label for="signInUserName">UserName</label>
+                        <input type="text" id="signInUserName" name="userName" required>
+                        <span id="userTakenError" class="error-text" style="display: none;">This user name is taken</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="signInPassword">Password</label>
+                        <div class="password-field">
+                            <input type="password" id="signInPassword" name="password" required>
+                            <span id="togglePasswordSignIn" class="eye-icon"></span>
+                        </div>
+                        <span id="passwordLengthErrorSignIn" class="error-text" style="display: none;">Password Length cannot be less than 8</span>
+                    </div>
+                    <div class="form-group">
+                        <input type="checkbox" id="rememberMe" name="rememberMe">
+                        <label for="rememberMe">Remember me</label>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" id="signInButton">Sign In</button>
+                    </div>
+                </form>
+
+                <!-- Sign Up Form -->
+                <form id="signUpForm" class="form" style="display: none;">
+                    <div class="form-group">
+                        <label for="signUpUserName">UserName</label>
+                        <input type="text" id="signUpUserName" name="userName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="signUpEmail">Email address</label>
+                        <input type="email" id="signUpEmail" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="signUpPassword">Password</label>
+                        <div class="password-field">
+                            <input type="password" id="signUpPassword" name="password" required>
+                            <span id="togglePasswordSignUp" class="eye-icon"></span>
+                        </div>
+                        <span id="passwordLengthErrorSignUp" class="error-text" style="display: none;">Password Length cannot be less than 8</span>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" id="signUpButton">Sign Up</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 NUNA Enawra. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="./js/signin.js"></script>
+</body>
+</html>

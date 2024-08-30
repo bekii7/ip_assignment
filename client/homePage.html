@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Header Section</title>
+  <link rel="stylesheet" href="./css/homePage.css">
+</head>
+<body>
+  <div class="header-container">
+    
+
+    
+    <div class="icon-bar">
+      <a  id="profile-link">
+        <i class="fa-solid fa-user icon" style="color: #000000;"></i>
+      </a>
+      <a class=' cart_div' href='./checkOut.html'>
+        <p class='cartNum' style="font-size: 6px;
+        color: white;
+        margin-left: auto;
+        background-color: red;
+        width: fit-content;
+        padding: 4px;
+        border-radius: 50%;">0</p>
+        <i class="fa-solid fa-cart-shopping icon" style="color: #000000;"></i>
+      </a>
+      <div class="social-icons">
+        <a class="social-icons" href="./aboutUs.html" style="text-decoration: none;">
+          <i class="fa-brands fa-instagram social-icons" style="color: #000000;"></i>
+          <i class="fa-regular fa-envelope social-icons" style="color: #000000;"></i>
+          <i class="fa-solid fa-phone social-icons" style="color: #000000;"></i>
+        </a>
+      </div>
+    </div>
+
+  
+    <div class="main-content">
+      <div class=" searchNav">
+        <div class='searchDiv'>
+          <input type="text" id="search" name="search" class="search">
+          <i class="fa-solid fa-magnifying-glass icon search-icon" style="color: #000000;"></i>
+        </div>
+        <div class="navbar">
+          <a href="./homePage.html" class="nav-link-active">Home</a>
+          <a href="./collections.html" class="nav-link">Collections</a>
+          <a href="aboutUs.html" class="nav-link">About Us</a>
+      </div>
+      </div>
+    
+      <div class="trending-section">
+        <img src="./images/trending3.jpg" style="width: 300px; margin-left: 100px;" alt="Orange Casual Bag">
+
+        <div class="trending-description">
+          <div>
+
+            <h1 class="trending-title">Trending Items</h1>
+            <p class="trending-text">
+              Discover the latest trends in fashion with our exclusive collection. 
+              Whether you're looking for casual elegance or bold statements, we have something for everyone.
+              Explore now and find your perfect style.
+            </p>
+          </div>
+          <a class="explore-button" href="./collections.html">Explore More</a>
+        </div>
+      </div>
+
+      <h2 class="collection-title">OUR NEW COLLECTION</h2>
+      <div class="collection-section">
+        <div class="collection-grid">
+          <div class="collection-item">
+            <img src="./images/trending1.jpg" class="item-image" alt="Beige Casual Bag">
+            <h3 class="item-title">Beige Casual Bag</h3>
+            <div class="item-details">
+              <p class="item-price">$ 68.56</p>
+              <button class="add-button">Add</button>
+            </div>
+          </div>
+          <div class="collection-item">
+            <img src="./images/trending2.jpg" class="item-image" alt="Brown Casual Bag">
+            <h3 class="item-title">Brown Casual Bag</h3>
+            <div class="item-details">
+              <p class="item-price">$ 68.56</p>
+              <button class="add-button">Add</button>
+            </div>
+          </div>
+          <div class="collection-item">
+            <img src="./images/trending3.jpg" class="item-image" alt="Orange Casual Bag">
+            <h3 class="item-title">Orange Casual Bag</h3>
+            <div class="item-details">
+              <p class="item-price">$ 68.56</p>
+              <button class="add-button">Add</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- products -->
+  <div class='products '>
+    <!-- category -->
+    <div className='category_div' style="display: flex;gap:200px;margin-left: 15%;padding: 4px;width: fit-content;">
+     <p class="category-active category cat">All</p> 
+     <p class="category cat">Men</p> 
+     <p class="category cat">Women</p> 
+     <p class="category cat">Kids</p> 
+     <p class="category cat">Dress</p> 
+     <p class="category cat">Shoe</p> 
+    </div>
+    <div class="itemsDiv" >
+
+  </div>
+  
+  </div>
+  <script src="./js/homePage.js"></script>
+</body>
+</html>
